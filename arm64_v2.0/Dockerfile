@@ -29,7 +29,7 @@ RUN apt-get install -y bsdtar curl
 
 WORKDIR /config/extensions
 
-COPY ../assets/packed_extensions.tar.gz .
+COPY packed_extensions.tar.gz .
 RUN tar -xvzf packed_extensions.tar.gz
 
 
