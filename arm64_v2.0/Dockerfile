@@ -32,5 +32,4 @@ WORKDIR /config/extensions
 COPY packed_extensions.tar.gz .
 RUN tar -xvzf packed_extensions.tar.gz
 
-
 WORKDIR /config/workspace
