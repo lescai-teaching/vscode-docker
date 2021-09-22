@@ -3,7 +3,7 @@ name: Build VScode for AMD64 v2
 on:
   push:
     paths:
-      - ./amd64_v2.0/Dockerfile
+      - amd64_v2.0/Dockerfile
       - .github/workflows/amd64_container_build_v2.yml
 
 env:

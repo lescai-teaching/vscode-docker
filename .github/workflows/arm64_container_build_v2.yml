@@ -3,7 +3,7 @@ name: Build VScode for ARM64 v2
 on:
   push:
     paths:
-      - ./arm64_v2.0/Dockerfile
+      - arm64_v2.0/Dockerfile
       - .github/workflows/arm64_container_build_v2.yml
 
 env:
