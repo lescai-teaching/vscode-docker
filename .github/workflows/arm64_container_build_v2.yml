@@ -1,4 +1,4 @@
-name: Build VScode for ARM64
+name: Build VScode for ARM64 v2
 
 on:
   push:
