@@ -24,6 +24,8 @@ ENV PATH /opt/software/bwa:${PATH}
 ### INSTALL VSCODE EXTENSIONS #######
 #####################################
 
+RUN apt-get install -y bsdtar curl
+
 WORKDIR /config/extensions
 
 RUN wget https://github.com/nextflow-io/vscode-language-nextflow/archive/refs/tags/v0.1.0.tar.gz
