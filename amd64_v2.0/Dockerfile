@@ -20,7 +20,7 @@ RUN apt-get install -y bsdtar curl
 
 WORKDIR /config/extensions
 
-COPY packed_extensions.tar.gz .
+RUN wget https://raw.githubusercontent.com/lescai-teaching/vscode-docker/main/assets/packed_extensions.tar.gz
 RUN tar -xvzf packed_extensions.tar.gz
 
 WORKDIR /config/workspace
