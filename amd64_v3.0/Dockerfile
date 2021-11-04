@@ -9,3 +9,5 @@ RUN conda install --quiet --yes \
 	bioconda::gatk4 && \
     conda update -y snpeff && \
     conda clean --all -f -y
+
+RUN chown -R abc:abc /usr/local/share
