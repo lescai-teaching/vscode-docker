@@ -6,5 +6,5 @@ FROM ghcr.io/lescai-teaching/vscode-docker-amd64:2.0.0
 RUN conda install --quiet --yes \
     bioconda::htslib \
     bioconda::tabix \
-	bioconda::gatk4 \
+	bioconda::gatk4 && \
     conda clean --all -f -y

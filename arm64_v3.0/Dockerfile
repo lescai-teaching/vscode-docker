@@ -15,5 +15,5 @@ RUN ./configure && make && make install
 #### install GATK4 updating from previous version ####
 WORKDIR /
 RUN conda install --quiet --yes \
-	bioconda::gatk4 \
+	bioconda::gatk4 && \
     conda clean --all -f -y
