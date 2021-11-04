@@ -16,4 +16,5 @@ RUN ./configure && make && make install
 WORKDIR /
 RUN conda install --quiet --yes \
 	bioconda::gatk4 && \
+	conda update -y snpeff && \
     conda clean --all -f -y
