@@ -22,7 +22,7 @@ case $TARGETPLATFORM in
 	cd /opt/software
 	git clone https://github.com/samtools/htslib.git
 	cd /opt/software/htslib
-	cd git submodule update --init --recursive
+	git submodule update --init --recursive
 	autoreconf -i
 	./configure && make && make install
 	;;
