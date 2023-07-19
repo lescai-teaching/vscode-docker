@@ -4,9 +4,15 @@
 case $TARGETPLATFORM in
     "linux/amd64")
 	### THIS RUNS AMD64 COMMANDS
-	conda install --quiet --yes samtools bwa && conda clean --all -f -y
-	conda install --quiet --yes bioconda::htslib bioconda::tabix 
-	conda update -y snpeff && conda clean --all -f -y
+	apt-get install -y samtools
+	apt-get -y install bwa
+	apt-get update && apt-get install -y libhts-dev autoconf
+	cd /opt/software
+	git clone https://github.com/samtools/htslib.git
+	cd /opt/software/htslib
+	git submodule update --init --recursive
+	autoreconf -i
+	./configure && make && make install
 	;;
     "linux/arm64") 
 	## THIS RUNS APPLE SILICON / ARM64 COMMANDS

@@ -34,7 +34,7 @@ RUN bash /opt/install/install_bwa.sh
 
 ENV PATH /opt/software/bwa:${PATH}
 
-RUN apt-get install -y bsdtar curl
+RUN apt-get install -y libarchive-tools curl
 
 WORKDIR /config/extensions
 
