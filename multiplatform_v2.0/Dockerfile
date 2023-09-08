@@ -27,6 +27,11 @@ COPY extensions.json .
 RUN tar -xvzf quarto.quarto-1.95.1-universal_installed.tar.gz
 RUN tar -xvzf chrischinchilla.vscode-pandoc-0.4.3-universal_installed.tar.gz
 
+#### quarto needs jupyter to render .qmd documents
+
+RUN conda install --quiet --yes jupyter && \
+    conda clean --all -f -y
+
 ## go back home then
 
 WORKDIR /config/workspace
