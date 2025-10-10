@@ -28,7 +28,7 @@ RUN useradd -m -s /bin/bash gitpod && \
     echo "gitpod ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/gitpod && \
     chmod 0440 /etc/sudoers.d/gitpod
 
-COPY snpEff.config /opt/conda/share/snpeff-5.3.0a-1/snpEff.config
+COPY snpEff.config /opt/conda/share/snpeff-5.2-2/snpEff.config
 
 COPY init.sh /usr/local/bin/init.sh
 RUN chmod +x /usr/local/bin/init.sh
