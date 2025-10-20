@@ -20,7 +20,8 @@ RUN apt-get update && \
         libharfbuzz-dev \
         sudo \
         wget \
-        git
+        git \
+        git-lfs
 
 RUN useradd -m -s /bin/bash gitpod && \
     echo "gitpod:student" | chpasswd && \
