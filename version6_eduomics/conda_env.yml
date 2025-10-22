@@ -11,3 +11,7 @@ dependencies:
   - bioconda::snpeff=5.2
   - bioconda::snpsift=5.2
   - conda-forge::util-linux
+  - conda-forge::python
+  - conda-forge::pip
+  - conda-forge::jupyterlab=4.2.5
+  - conda-forge::ipykernel=6.29.5
